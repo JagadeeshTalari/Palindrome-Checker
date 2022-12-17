@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+    width: screen;   
+}
+
+.background{
+    background-color: #474747;
+}
+
+.box-container{
+    height: 25%;
+    background-color: #c09f80;
+}
+
+button{
+    padding: 2px 15px;
+    background-color: #76323f;
+}
+
+.result{
+    color: #272525;
+}
