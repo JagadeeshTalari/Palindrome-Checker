@@ -8,7 +8,8 @@ body{
 }
 
 .box-container{
-    height: 25%;
+    min-height: 32%;
+    padding: 2rem;
     background-color: #c09f80;
 }
 
@@ -18,5 +19,6 @@ button{
 }
 
 .result{
+    padding: 2rem;
     color: #272525;
 }
