@@ -7,19 +7,22 @@ button.addEventListener('click', palindromeChecker);
 
 function palindromeChecker(){
 
-    let reversevalue = userInput.value;
+    let reversevalue = userInput.value.toLowerCase();
+
     if(reversevalue != "")
     {
         reversevalue = reversevalue.split("").reduceRight( (acc, e) => acc + e)
 
-        if(userInput.value == reversevalue){
-            return result.innerText = ` ${userInput.value} == ${reversevalue} \n So...It's a Palindrome`;
+        if(userInput.value.toLowerCase() == reversevalue){
+            return result.innerText = ` ${userInput.value.toLowerCase()} == ${reversevalue} \n So...It's a Palindrome`;
         }
         else{
             return result.innerText = `${userInput.value} != ${reversevalue} \n So...Not a Palindrome`;;
         }
     }
-    else{
+
+    else
+    {
         return result.innerText = "You haven't entered anything"
     }
 
